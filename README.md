@@ -11,6 +11,6 @@ Student Info
 =======================
 
 * Name: Truong Quoc Khanh
-* ID: BI8-084
+* ID: BI8-084 
 
 
