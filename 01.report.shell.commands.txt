@@ -1,6 +1,8 @@
 ﻿hello world
 
-passwd: password updated successfullyMon Apr 1 10:47:16 ICT 2019
+passwd: password updated successfully
+
+Mon Apr 1 10:47:16 ICT 2019
 
 Zireael
 
