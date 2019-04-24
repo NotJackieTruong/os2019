@@ -1,0 +1,20 @@
+zireael@zireaelcomputer:~$ ls | grep -E '^examples.desktop[a-z]{,2}$'
+examples.desktop
+
+zireael@zireaelcomputer:/etc$ wc -l passwd
+41 passwd
+
+zireael@zireaelcomputer:/$ free
+              total
+Mem:        3080720  
+Swap:       3142652
+
+zireael@zireaelcomputer:/$ cat /proc/cpuinfo | grep processor | wc -l
+1
+
+zireael@zireaelcomputer:/$ find /home/zireael/pictures -name *.jpg | wc -l
+find: ‘/home/zireael/pictures’: No such file or directory
+0
+
+
+
