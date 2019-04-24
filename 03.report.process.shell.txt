@@ -1,0 +1,51 @@
+zireael@zireaelcomputer:~$ ps man
+  PID TTY      STAT   TIME COMMAND
+  899 tty7     -      3:18 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/ru
+    - -        Ss+    3:18 -
+  901 tty1     -      0:00 /sbin/agetty --noclear tty1 linux
+    - -        Ss+    0:00 -
+ 6912 pts/4    -      0:00 bash
+    - -        Ss+    0:00 -
+ 6934 pts/4    -      0:00 gnome-calculator
+    - -        Sl     0:00 -
+    - -        Sl     0:00 -
+    - -        Sl     0:00 -
+    - -        Sl     0:00 -
+ 6952 pts/5    -      0:00 bash
+    - -        Ss     0:00 -
+ 6964 pts/5    -      0:00 ps man
+    - -        R+     0:00 -
+
+
+zireael@zireaelcomputer:~$ ps aux | grep calculator
+zireael   6934  0.5  1.0 640048 33736 pts/4    Sl   10:21   0:00 gnome-calculator
+zireael   6969  0.0  0.0  22824   976 pts/5    S+   10:22   0:00 grep --color=auto calculator
+
+zireael@zireaelcomputer:~$ cat /proc/6934/status
+Name:	gnome-calculato
+State:	S (sleeping)
+
+
+zireael@zireaelcomputer:~$ kill -stop 6934
+
+zireael@zireaelcomputer:~$ cat /proc/6934/status
+Name:	gnome-calculato
+State:	T (stopped)
+
+zireael@zireaelcomputer:~$ kill -cont 6934
+
+zireael@zireaelcomputer:~$ cat /proc/6934/status
+Name:	gnome-calculato
+State:	S (sleeping)
+
+zireael@zireaelcomputer:~$ kill -kill 6934
+
+zireael@zireaelcomputer:~$ cat /proc/6934/status
+cat: /proc/6934/status: No such file or directory
+
+
+
+
+
+
+
