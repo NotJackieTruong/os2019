@@ -1,0 +1,18 @@
+zireael@zireaelcomp:~/Desktop/os2019/os2019$ grep systemd /proc/sched_debug
+         systemd     1       603.145583      4111   120       304.377680      1399.712886   1121512.319678 0 0 /autogroup-2
+ systemd-journal   213       123.629723       786   120       205.405769       124.836010   1083102.896850 0 0 /autogroup-5
+   systemd-udevd   249       672.293238      1005   120       308.411772       478.323850   1021761.618177 0 0 /autogroup-10
+ apt.systemd.dai   626      6226.338976        32   120         6.554650         3.660883    662768.972331 0 0 /autogroup-48
+  systemd-logind   638        28.020921       421   120        49.060831        29.072150   1075476.360167 0 0 /autogroup-52
+         systemd  1446        20.599455        28   120        23.372215        21.947054    110815.570203 0 0 /autogroup-90
+
+zireael@zireaelcomp:~/Desktop/os2019/os2019$ grep switch /proc/1/sched
+nr_switches                                  :                 4132
+nr_voluntary_switches                        :                 3383
+nr_involuntary_switches                      :                  749
+
+zireael@zireaelcomp:~/Desktop/os2019/os2019$ grep switch /proc/1446/sched
+nr_switches                                  :                   28
+nr_voluntary_switches                        :                   12
+nr_involuntary_switches                      :                   16
+
