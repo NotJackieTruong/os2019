@@ -18,7 +18,6 @@ zireael@zireaelcomputer:~$ ps man
 
 zireael@zireaelcomp:~$ gnome-calculator&
 
-
 zireael@zireaelcomputer:~$ ps aux | grep calculator
 zireael   6934  0.5  1.0 640048 33736 pts/4    Sl   10:21   0:00 gnome-calculator
 zireael   6969  0.0  0.0  22824   976 pts/5    S+   10:22   0:00 grep --color=auto calculator
