@@ -4,17 +4,17 @@ examples.desktop
 zireael@zireaelcomputer:/etc$ wc -l passwd
 41 passwd
 
-zireael@zireaelcomputer:/$ free
-              total
-Mem:        3080720  
-Swap:       3142652
+zireael@zireaelcomp:~$ free -h | grep -E 'Mem|Swap' | awk '{print $1 $2}'
+Mem:2.9Gi
+Swap:711Mi
+
 
 zireael@zireaelcomputer:/$ cat /proc/cpuinfo | grep processor | wc -l
 1
 
-zireael@zireaelcomputer:/$ find /home/zireael/pictures -name *.jpg | wc -l
-find: ‘/home/zireael/pictures’: No such file or directory
+zireael@zireaelcomp:~$ find ~/Pictures/ -type f -name "*.jpg"| wc -l
 0
+
 
 
 
