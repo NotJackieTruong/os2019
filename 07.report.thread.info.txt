@@ -1,0 +1,10 @@
+zireael@zireaelcomp:~$ ps aux | grep -i firefox
+zireael   2711  9.9  6.3 874516 195340 ?       Sl   08:47   0:04 /usr/lib/firefox/firefox
+zireael   2803  0.0  0.0  22824   924 pts/2    S+   08:48   0:00 grep --color=auto -i firefox
+
+
+zireael@zireaelcomp:~$ ps -o nlwp 2711
+NLWP
+  41
+
+
